@@ -1,23 +1,23 @@
 $(document).ready(function(){
 
 	$(window).scroll(function() {
-	  /* the next line is how many px you need to scroll before it displays */
+	  // the next line is how many px you need to scroll before it displays */
     if ($(this).scrollTop() > 500) {
-      /* the #div names below should be for the button */
+      // the #div names below should be for the button */
       $("#toTop").fadeIn();
     } else {
       $("#toTop").fadeOut();
     }
 
-    /* next two lines affect how the button appears when scrolling up to set px's from the bottom */
+    // next two lines affect how the button appears when scrolling up to set px's from the bottom */
     if($(window).scrollTop() + $(window).height() < $(document).height() - 400) {
       $('#toTop').css("position","fixed");$('#toTop').css("bottom","0").css("right","0"); }
-    /* next two lines affect how the button appears after hitting the px's from the bottom */
+    // next two lines affect how the button appears after hitting the px's from the bottom */
 		if($(window).scrollTop() + $(window).height() > $(document).height() - 400) {
       $('#toTop').css("position","relative"); $('#toTop').css("bottom","-87px").css("right","-20px") }
 	});
   
-  /* affects the scroll animation and speed */
+  // affects the scroll animation and speed */
 	$(document).on('click','#toTop', function(){
 		$("html, body").animate({scrollTop: 0}, 350);
 	});
