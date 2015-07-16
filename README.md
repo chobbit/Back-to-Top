@@ -1,2 +1,7 @@
 # Back-to-Top
-Sliding Cack to the Top button
+Sliding Back to the Top button
+
+Contains:
+SCRIPT file
+CSS file
+HTML file
