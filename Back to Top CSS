@@ -1,0 +1,78 @@
+.backtotop_button_wrap {
+	width:100%; 
+	background:white; 
+	height:auto;
+}
+
+.backtotop_button_wrap .backtotop_button_height {
+	width:100%; 
+	height:55px;
+}
+
+.backtotop_button_wrap #toTop {
+	display:none; 
+	position: fixed; 
+	right:0; 
+	bottom:0; 
+	width:50px; 
+	height:auto; 
+	background:#DDDDDD; 
+	float:right; 
+	padding: 20px 10px 10px; 
+	text-align:center; 
+	line-height:10px; 
+	font-size: 12px;
+	z-index:9999;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    		-moz-opacity: 0.5;
+   		  -khtml-opacity: 0.5;
+    	 -webkit-opacity: 0.5;
+   			 -ms-opacity: 0.5;
+    		  -o-opacity: 0.5;
+    			 opacity: 0.5;
+	cursor:pointer;
+	transition: opacity .25s 0s linear;
+		-webkit-transition: all 0.5s ease; 
+		   -moz-transition: all 0.5s ease; 
+			 -o-transition: all 0.5s ease; 
+			-ms-transition: all 0.5s ease; 
+				transition: all 0.5s ease;
+}
+
+.backtotop_button_wrap #toTop:hover { 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    		-moz-opacity: 1.0;
+   		  -khtml-opacity: 1.0;
+    	 -webkit-opacity: 1.0;
+   			 -ms-opacity: 1.0;
+    		  -o-opacity: 1.0;
+    			 opacity: 1.0;
+}
+
+.backtotop_button_wrap .uparrow {
+	font-size:26px;
+}
+
+@media (max-width:1180px) {
+	.backtotop_button_wrap #toTop {
+		font-size:10px;
+		width:40px;
+	}
+
+	.backtotop_button_wrap .uparrow {
+	font-size:20px;
+	}
+}
+
+@media (max-width:800px) {
+	.backtotop_button_wrap #toTop {
+		font-size:8px;
+		width:30px;
+	}
+
+	.backtotop_button_wrap .uparrow {
+	font-size:16px;
+	}
+}
